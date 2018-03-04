@@ -1,0 +1,51 @@
+		.borderless td, .borderless th {
+			border: none;
+			background-color:grey;
+		}
+
+		.carousel-caption h1{
+		  font-size: 5.4em;
+		  font-family: 'Pacifico', cursive;
+		  padding-bottom: .4em;
+		}
+
+		.carousel-caption p{
+		  font-size: 2em;
+		}
+
+		.affix {
+			top: 5em;
+		}
+
+		input, label {
+			display:block;
+		}
+
+		textarea {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			width: 100%;
+			resize:none;
+			font-size: 1.5em;
+			border-radius:10px;
+		}
+
+		.table{
+			background-color:#bce4ff;
+			border-left:solid;
+			border-right:solid;
+			border-color: grey;
+		}
+
+		.table td {
+			border-left:solid;
+			border-right:solid;
+			border-color: grey;
+			font-weight: normal;
+			font-size: 1.5em;
+		}
+
+		.glyphicon{
+			color: #f4dc42;
+		}
