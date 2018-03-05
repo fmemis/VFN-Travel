@@ -1,2 +1,5 @@
 # VFN-Travel
-An airbnb type site built for educational purposes.
+An airbnb-like website built for educational purposes.
+
+## Project description:
+Created an airbnb-like website
