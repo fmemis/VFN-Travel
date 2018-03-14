@@ -1,27 +1,19 @@
 package servlets;
 
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.List;
+
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.Part;
 
-import dao.ListingDAO;
-import dao.ListingDAOI;
 import dao.UserDAO;
 import dao.UserDAOI;
-import model.Listing;
 import model.User;
-import model.VisitedHistory;
+
 
 /**
  * Servlet implementation class AcceptProviderServlet

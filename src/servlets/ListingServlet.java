@@ -1,8 +1,6 @@
 package servlets;
 
 import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
@@ -22,22 +20,16 @@ import dao.SearchHistoryDAO;
 import dao.SearchHistoryDAOI;
 import dao.UserDAO;
 import dao.UserDAOI;
-import dao.VisitedHistoryDAO;
-import dao.VisitedHistoryDAOI;
 import jpautils.EntityManagerHelper;
 import model.Image;
 import model.Listing;
-import model.ListingPK;
 import model.Review;
 import model.SearchHistory;
 import model.SearchHistoryPK;
 import model.User;
 import model.VisitedHistory;
-import model.VisitedHistoryPK;
 
-import java.util.Date;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Servlet implementation class ListingServlet

@@ -2,18 +2,15 @@ package servlets;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.concurrent.TimeUnit;
 
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
-import javax.persistence.TypedQuery;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -192,7 +189,7 @@ public class ProviderProfileServlet extends HttpServlet {
 		
 		
 		
-		request.setAttribute("user", user);
+		//request.setAttribute("user", user);
 		//disp = getServletContext().getRequestDispatcher("/providerprofile.jsp");
 		//disp.forward(request, response);
 		response.sendRedirect("userprofile");

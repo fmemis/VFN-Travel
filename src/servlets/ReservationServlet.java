@@ -22,7 +22,6 @@ import dao.UserDAOI;
 import dao.VisitedHistoryDAO;
 import dao.VisitedHistoryDAOI;
 import model.Listing;
-import model.ListingPK;
 import model.Reservation;
 import model.ReservationPK;
 import model.User;

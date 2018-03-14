@@ -2,12 +2,7 @@ package servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 
-import javax.persistence.EntityManager;
-import javax.persistence.Query;
-import javax.persistence.TypedQuery;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,21 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import dao.ListingDAO;
 import dao.ListingDAOI;
-import dao.ReviewDAO;
-import dao.ReviewDAOI;
 import dao.UserDAO;
 import dao.UserDAOI;
-import jpautils.EntityManagerHelper;
-import model.Image;
 import model.Listing;
-import model.ListingPK;
-import model.Review;
 import model.User;
-import model.VisitedHistory;
-
-import java.util.Date;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Servlet implementation class EditRoomServlet
@@ -173,7 +157,7 @@ public class EditRoomServlet extends HttpServlet {
 		listing.setDogs(pets);
 		listing.setType(roomtype);
 		
-		request.setAttribute("user", user);
+		/*request.setAttribute("user", user);*/
 		
 		
 		//disp = getServletContext().getRequestDispatcher("/providerprofile.jsp");

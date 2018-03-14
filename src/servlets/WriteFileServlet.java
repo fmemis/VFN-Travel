@@ -2,7 +2,6 @@ package servlets;
 
 import java.io.IOException;
 import java.io.*;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.xml.transform.TransformerException;
 import java.util.Iterator;
 import java.util.List;
-
 import dao.ListingDAO;
 import dao.ListingDAOI;
 import dao.UserDAO;
@@ -21,41 +19,12 @@ import dao.ReviewDAO;
 import dao.ReviewDAOI;
 import dao.ReservationDAO;
 import dao.ReservationDAOI;
-
 import java.util.ArrayList;
-
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-
 import model.Listing;
 import model.Review;
 import model.User;
 import model.Reservation;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-
-import java.io.FileOutputStream;
-import java.io.OutputStream;
-
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
 /**
  * Servlet implementation class WriteFileServlet
  */

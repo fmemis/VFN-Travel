@@ -1,10 +1,7 @@
 package servlets;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
+
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,19 +9,13 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.Part;
-
-import dao.ImageDAO;
-import dao.ImageDAOI;
 import dao.ListingDAO;
 import dao.ListingDAOI;
 import dao.ReviewDAO;
 import dao.ReviewDAOI;
 import dao.UserDAO;
 import dao.UserDAOI;
-import model.Image;
 import model.Listing;
-import model.ListingPK;
 import model.Review;
 import model.ReviewPK;
 import model.User;

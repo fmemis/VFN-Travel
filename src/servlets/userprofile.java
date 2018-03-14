@@ -21,7 +21,6 @@ import dao.UserDAO;
 import dao.UserDAOI;
 import model.Listing;
 import model.User;
-import model.VisitedHistory;
 
 
 

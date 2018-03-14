@@ -1,31 +1,20 @@
 package servlets;
 
 import java.io.IOException;
-import java.lang.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
 
 
 import javax.persistence.EntityManager;
-import javax.persistence.Query;
-import javax.persistence.TypedQuery;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import javax.servlet.http.Cookie;
 import helpFunctions.Hashing;
 import jpautils.EntityManagerHelper;
 import dao.UserDAO;
 import dao.UserDAOI;
-import model.Listing;
-import model.Review;
 import model.User;
-import model.VisitedHistory;
 
 /**
  * Servlet implementation class UserLoginServlet
