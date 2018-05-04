@@ -67,9 +67,7 @@ public class EditRoomServlet extends HttpServlet {
 		username = request.getParameter("username");
 		id = Integer.parseInt(request.getParameter("id"));
 		listing = dao.findById(id, username);
-		out.println("<p>You listing is: " + username  + "</p>");
-		out.println("<p>You listing is: " + id  + "</p>");
-		out.println("<p>You listing is: " + listing.getDescription()  + "</p>");
+		
 		
 		UserDAOI daoo = new UserDAO();
 		User user; 
@@ -77,7 +75,6 @@ public class EditRoomServlet extends HttpServlet {
 		user = daoo.findByUsername(usernamee);
 		
 		String address = request.getParameter("address");
-		out.println("<p>You listing is: " + address  + "</p>");
 		String area = request.getParameter("area");
 		String baths = request.getParameter("baths");
 		String beds = request.getParameter("beds");
