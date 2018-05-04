@@ -241,15 +241,6 @@ public class SearchServlet extends HttpServlet {
 			has_prev_page = false;
 		}
 		
-		
-		System.out.println(arrival);
-		System.out.println(city);
-		System.out.println(departure);
-		System.out.println(guests);
-		System.out.println(options.getPrice1());
-		System.out.println(options.getPrice2());
-		System.out.println(options.getAircondition());
-		
 		request.setAttribute("searchResults", results);
 		request.setAttribute("nextPage", has_next_page);
 		request.setAttribute("prevPage", has_prev_page);
