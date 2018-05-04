@@ -181,8 +181,7 @@ public class IntroToDBServlet extends HttpServlet {
         	listing.setDailyPrice(price);
         	
         	daoo.create(listing);
-            System.out.println(count + " " + line.size());
-            System.out.println("Country [id= " + id + " " + idPK + " " + user.getUsername()   + " "+ line.get(3) +  " " + line.get(4) + " " + listing.getArea() + " " + listing.getCity() + " " + listing.getLatitude() + " " + listing.getBedsNumber()) ;
+            
             ++count;
         }
         scanner.close();
