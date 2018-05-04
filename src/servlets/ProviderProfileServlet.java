@@ -149,12 +149,9 @@ public class ProviderProfileServlet extends HttpServlet {
 		
 		String username = listing.getId().getUserUsername();
 		int something = listing.getRoomsNumber();
-		///System.out.println("1" + listing.getId().getIdlisting());
-		System.out.println("2" + listing.getCity());
-		System.out.println(id + username + something);
+		
 		
 		listing = daoo.findById(id, usernamee);
-		System.out.println("1" + listing.getCity());
 		
 		for (Part filePart : fileParts) {
 	        String photoName = Paths.get(filePart.getSubmittedFileName()).getFileName().toString();
@@ -173,14 +170,11 @@ public class ProviderProfileServlet extends HttpServlet {
 						image = new Image();
 						ImagePK imagePK = new ImagePK();
 						//listing = daoo.findById(listing.getId().getIdlisting(), listing.getId().getUserUsername());
-						System.out.println("3" + listing.getCity());
 						image.setListing(listing);
 						image.setId(imagePK);
 						image.setPhoto(savename);
 						imagedao.create(image);
-						System.out.println("4" + listing.getCity());
 						listing.addImage(image);
-						System.out.println("5" + listing.getCity());
 						++count;
 					}	
 				}
